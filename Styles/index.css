@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Lobster&display=swap");
+
+:root {
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+  --clr-black: rgb(0, 0, 0);
+  --light-blue: #1e81dd;
+  --clr-white: #fff;
+}
+
+
+* , *::after , *::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body{
+  font-family: "Caveat", cursive, "Franklin Gothic Medium", "Arial Narrow",
+    Arial, sans-serif;
+  font-family: "Lobster", cursive;
+  background: hsla(312, 66%, 76%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(312, 66%, 76%, 1) 0%,
+    hsla(234, 93%, 67%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(312, 66%, 76%, 1) 0%,
+    hsla(234, 93%, 67%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(312, 66%, 76%, 1) 0%,
+    hsla(234, 93%, 67%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EA98DA", endColorstr="#5B6CF9", GradientType=1 );
+  color: var(--clr-white);
+  /* Form Validator */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin: 1rem;
+  font-size: 2.5rem;
+  color: var(--clr-black);
+}
+.container{
+  background: rgba( 86, 30, 84, 0.45 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 1px );
+  -webkit-backdrop-filter: blur( 1px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  width: 35rem;
+  color: var(--clr-black);
+}
+.form {
+  padding: 1.5rem;
+}
+
+.form-control{
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.form-control label{
+  display: block;
+  color: var(--clr-black);
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.form-control input{
+  display: block;
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 0.5rem;
+  border: 2px solid rgb(124, 27, 27);
+}
+
+.form-control input:focus{
+  outline: 0;
+  border-color: var(--light-blue);
+}
+
+.form-control.success input {
+  border-color: var(--success-color);
+} 
+
+.form-control.error input {
+  border-color: var(--error-color);
+} 
+
+small{
+  color: red;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  visibility: hidden;
+}
+
+.form-control.error small{
+  visibility: visible;
+}
+
+button {
+  cursor: pointer;
+  background-color: var(--clr-black);
+  border: 2px solid var(--clr-black);
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--clr-white);
+  padding: 0.5rem 1rem;
+  display: block;
+  width: 100%;
+}
+
+button:hover {
+  background-color: rgb(19, 202, 28) ;
+  border: 2px solid var(--clr-black);
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--clr-black);
+  padding: 0.5rem 1rem;
+  display: block;
+  width: 100%;
+}
+
+
+
